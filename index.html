@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="holder">
+        <div class="container pt-5 ">
+
+            <form id="book-form" class="col-md-6 col-xs-12 col-lg-6 mt-4">
+                <div class="card p-2">
+                    <h1 class="card-header">ADD BOOK</h1>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" class="p-2 mb-2">
+                    <label for="Author">Author</label>
+                    <input type="text" id="author" class="p-2 mb-2">
+                    <label for="isbn">ISBN#</label>
+                    <input type="text" id="isbn" class="p-2 mb-2">
+                    <input type="submit" value="Submit" class="p-3 btn-dark">
+                </div>
+            </form>
+            <table class="table book-list col-md-6 col-xs-12 col-lg-6 mt-4 table-borderless table-striped ">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Author</th>
+                        <th>ISBN</th>
+                        <th>#</th>
+                    </tr>
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="bootstrap.js"></script>
+    <script src="app-s6.js"></script>
+</body>
+
+</html>
